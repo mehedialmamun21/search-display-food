@@ -1,3 +1,15 @@
+// search on enter key pressing in keyboard directly 
+const searchBtn = document.getElementById("search-button");
+const searchFld = document.getElementById("search-field");
+
+searchFld.addEventListener("keypress", function (event) {
+    /* event.preventDefault(); */
+    if (event.keyCode == 13) {
+        searchBtn.click();
+    }
+});
+
+
 document.getElementById('error-message').style.display = 'none';
 
 const searchFood = () => {
