@@ -1,10 +1,18 @@
 // search on enter key pressing in keyboard directly 
+
 const searchBtn = document.getElementById("search-button");
 const searchFld = document.getElementById("search-field");
 
 searchFld.addEventListener("keypress", function (event) {
-    /* event.preventDefault(); */
-    if (event.keyCode == 13) {
+
+    // event.preventDefault();
+
+    // console.log('keypress triggered', event.key);
+
+    if (event.key == 'Enter') {
+
+        // console.log('inside click');
+
         searchBtn.click();
     }
 });
